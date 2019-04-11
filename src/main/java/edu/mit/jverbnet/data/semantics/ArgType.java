@@ -10,15 +10,15 @@
 
 package edu.mit.jverbnet.data.semantics;
 
-import static edu.mit.jverbnet.util.Checks.NotNull;
-import static edu.mit.jverbnet.util.Checks.NotNullEmptyOrBlank;
-
 import java.util.HashMap;
 import java.util.Map;
 
 import edu.mit.jverbnet.data.IVerbnetType;
 import edu.mit.jverbnet.data.ThematicRoleType;
 import edu.mit.jverbnet.data.VerbnetTypes;
+
+import static edu.mit.jverbnet.util.Checks.NotNull;
+import static edu.mit.jverbnet.util.Checks.NotNullEmptyOrBlank;
 
 /**
  * Argument types. The values in this enum correspond to the elements of
@@ -33,7 +33,8 @@ public enum ArgType implements IVerbnetType {
 	Constant     ("Constant",     ArgTypeConstant.class),
 	Event        ("Event",        ArgTypeEvent.class),
 	ThemRole     ("ThemRole",     ThematicRoleType.class),
-	VerbSpecific ("VerbSpecific", ArgTypeVerbSpecific.class);
+	VerbSpecific ("VerbSpecific", ArgTypeVerbSpecific.class),
+	PredSpecific ("PredSpecific", ArgTypeVerbSpecific.class);
 	
 	/** 
 	 * The name of the xsd:simpleType entry that describes this verbnet type in the XSD file.

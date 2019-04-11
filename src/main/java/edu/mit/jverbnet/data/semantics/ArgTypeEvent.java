@@ -10,12 +10,12 @@
 
 package edu.mit.jverbnet.data.semantics;
 
-import static edu.mit.jverbnet.util.Checks.NotNullEmptyOrBlank;
-
 import java.util.HashMap;
 import java.util.Map;
 
 import edu.mit.jverbnet.data.VerbnetTypes;
+
+import static edu.mit.jverbnet.util.Checks.NotNullEmptyOrBlank;
 
 /**
  * The subtypes of event argument type. The values in this enum correspond to
@@ -26,11 +26,18 @@ import edu.mit.jverbnet.data.VerbnetTypes;
  * @version 1.2.0
  * @since JVerbnet 1.0.0
  */
-public enum ArgTypeEvent implements ISemanticArgType {
+public enum ArgTypeEvent implements edu.mit.jverbnet.data.semantics.ISemanticArgType {
 	
 	E       ("E"),
 	E0      ("E0"),
 	E1      ("E1"),
+	E2      ("E2"),
+	E3      ("E3"),
+	E4      ("E4"),
+	E5      ("E5"),
+	E6      ("E6"),
+	E7      ("E7"),
+	E8      ("E8"),
 	duringE ("during(E)"),
 	duringE0("during(E0)"),
 	duringE1("during(E1)"),
@@ -83,8 +90,8 @@ public enum ArgTypeEvent implements ISemanticArgType {
 	 *
 	 * @see edu.mit.jverbnet.data.semantics.ISemanticArgType#getArgType()
 	 */
-	public ArgType getArgType() {
-		return ArgType.Event;
+	public edu.mit.jverbnet.data.semantics.ArgType getArgType() {
+		return edu.mit.jverbnet.data.semantics.ArgType.Event;
 	}
 	
 	/**
